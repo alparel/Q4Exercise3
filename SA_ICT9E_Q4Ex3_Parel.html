@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q3 | Exercise #3 |</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap" rel="stylesheet">
+	<style type="text/css">
+		th,td{
+			padding: 15px;
+			font-family: 'Roboto', sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<h1 align="center" style="color: red; font-family: 'Oswald', sans-serif;">Basic Arithmetic</h1>
+	<h3 align="center">If x = 10, y = 5</h3>
+	<table border="1" align="center">
+		<tr>
+		<th>Operation</th>
+		<th>Example</th>
+		</tr>
+		<tr>
+		<td><b>Addition</b></td>
+		<td>x + y = <strong id="add"></strong></td>
+		</tr>
+		<tr>
+		<td><b>Subtraction</b></td>
+		<td>x - y = <strong id="sub"></strong></td>
+		</tr>
+		<tr>
+		<td><b>Multiplication</b></td>
+		<td>x * y = <strong id="multi"></strong></td>
+		</tr>
+		<tr>
+		<td><b>Division</b></td>
+		<td>x / y = <strong id="divi"></strong></td>
+		</tr>
+		<tr>
+		<td><b>Modulus</b></td>
+		<td>x % y = <strong id="modu"></strong></td>
+		</tr>			
+	</table>
+
+	<script type="text/javascript">
+		let x=10, y=5;
+
+		alert("Let us learn basic arithmetic.")
+
+		document.getElementById("add").innerHTML = x + y;
+		document.getElementById("sub").innerHTML = x - y;
+		document.getElementById("multi").innerHTML = x * y;
+		document.getElementById("divi").innerHTML = x / y;
+		document.getElementById("modu").innerHTML = x % y;
+	</script>
+</body>
+</html>
